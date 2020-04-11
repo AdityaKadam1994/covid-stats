@@ -50,6 +50,10 @@ body {
   color: red;
 }
 
+.stats-wrapper div:nth-child(5) {
+  color: #e600b5;
+}
+
 .stats-wrapper p {
   font-size: 18px;
 }
