@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { authorization } from "../authorization";
@@ -7,17 +7,17 @@ import { initialCountry, filteredCountry } from "../store/actions";
 const WorldStats = () => {
   const [worldStats, setWorldStats] = useState({});
   const [search, setSearch] = useState("");
-  const [countryStat, setCountryStat] = useState(null);
   const singleStat = useSelector((state) => state.allstats);
   const dispatch = useDispatch();
-  let lat, lon;
+
   let countryData = singleStat;
-  let countryName;
+  let countryName = useRef(null);
 
   const config = {
     headers: authorization,
   };
   useEffect(() => {
+    let lat, lon;
     //Geolocation
     const Geolocation = () => {
       const showposition = (position) => {
@@ -26,8 +26,8 @@ const WorldStats = () => {
         axios
           .get(`https://geocode.xyz/${lat},${lon}?json=1`)
           .then((response) => {
-            countryName = response.data.country;
-            getCountryData(null, countryName);
+            countryName.current = response.data.country;
+            getCountryData(null, countryName.current);
           });
       };
       if (navigator.geolocation) {

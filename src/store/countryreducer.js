@@ -15,7 +15,6 @@ export const countryReducer = (state = null, action) => {
           }
         }
       );
-      console.log(initialCountry);
       return { ...state, allstats: [...initialCountry, ...twocountries] };
       break;
     case "SEARCHCOUNTRY":
