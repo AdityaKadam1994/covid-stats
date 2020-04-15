@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85d67980cee1fa66ec27517333bd5358",
+    "revision": "32586b7b2b5934f500f3f01f2848bca4",
     "url": "/covid-stats/index.html"
   },
   {
-    "revision": "14aed379621ff7fdb426",
-    "url": "/covid-stats/static/css/main.ff6ce0cb.chunk.css"
+    "revision": "5972f611194d684e8b01",
+    "url": "/covid-stats/static/css/main.9cf5ec63.chunk.css"
   },
   {
-    "revision": "65177fbef66655d22e15",
-    "url": "/covid-stats/static/js/2.78345ded.chunk.js"
+    "revision": "6fb1614a00c6d67e4856",
+    "url": "/covid-stats/static/js/2.5809f852.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/covid-stats/static/js/2.78345ded.chunk.js.LICENSE.txt"
+    "url": "/covid-stats/static/js/2.5809f852.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "14aed379621ff7fdb426",
-    "url": "/covid-stats/static/js/main.37c7eb6b.chunk.js"
+    "revision": "5972f611194d684e8b01",
+    "url": "/covid-stats/static/js/main.8963cbbd.chunk.js"
   },
   {
     "revision": "424e1018234cf4e3cffd",
